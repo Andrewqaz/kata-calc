@@ -114,7 +114,7 @@ class Rome {
     }
 
     public static String arabianToRome(int arabian) throws Exception {
-        if (arabian <= romeNumbers.size()) {
+        if (arabian <= romeNumbers.size() && arabian >= 1) {
             return romeNumbers.get(arabian - 1);
         }
         throw new Exception("'" + arabian + "' - находится вне диапазона 1 - 100");
